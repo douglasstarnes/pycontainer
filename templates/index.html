@@ -1,0 +1,10 @@
+<html>
+    <body>
+        <a href="/new">New</a>
+        <ul>
+        {% for investment in trades %} 
+            <li>{{ investment.coin_id }} {{ investment.price }} {{ investment.currency}} {{ investment.timestamp }}</li>
+        {% endfor %}
+        </ul>
+    </body>
+</html>
